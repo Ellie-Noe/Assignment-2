@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Pizza Website(Assignment Two)">
+        <meta name="robots" content="noindex, nofollow">
+        <title>Assignment Two | CSS Grid</title>
+        <!-- Adding Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <!-- logo -->
+            <div>
+                <a href="index.html"><img src="./img/pizzallio-logo.png" alt="header logo" width="150" height="150"></a>
+            </div>
+            <nav>
+                <menu>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Cart</a></li>
+                </menu>
+            </nav>
+        </header>
+        <section class="Pizza">
+            <h1>Customize your Own Pizza!</h1>
+        </section>
+        <!-- main contents for the page -->
+        <main>
+            <div>
+                <form action="somephpfile" method="post" enctype="multipart/form-data">
+                    <label>How many Pizza do you want to order?(Maximum-10)</label>
+                    <br>
+                    <input type="number" name="quantity" min="1" max="10">
+                    <br>
+                    <label>Size</label>
+                    <br>
+                    <input type="radio" id="small" name="size" value="Small">
+                    <label for="small">Small(10")</label>
+                    <br>
+                    <input type="radio" id="medium" name="size" value="Medium">
+                    <label for="medium">Medium(12")</label>
+                    <br>
+                    <input type="radio" id="large" name="size" value="Large">
+                    <label for="large">Large(14")</label>
+                    <br>
+                    <label>Sauce</label>
+                    <br>
+                    <input type="radio" id="pizza" name="sauce" value="PIZZA">
+                    <label for="pizza">Original Pizza Sauce</label>
+                    <br>
+                    <input type="radio" id="bbq" name="sauce" value="BBQ">
+                    <label for="bbq">BBQ Sauce</label>
+                    <br>
+                    <input type="radio" id="rds" name="sauce" value="RDS">
+                    <label for="rds">Ranch Dressing Sauce</label>
+                    <br>
+                    <input type="radio" id="chilli" name="sauce" value="SCS">
+                    <label for="chilli">Sweet Chilli Sauce</label>
+                    <br>
+                    <label>Toppings</label>
+                    <br>
+                    <input type="checkbox" id="choice1" name="choice1" value="choice 1">
+                    <label for="choice1">Pepperoni</label>
+                    <br>
+                    <input type="checkbox" id="choice2" name="choice2" value="choice 2">
+                    <label for="choice2">Sausage</label>
+                    <br>
+                    <input type="checkbox" id="choice3" name="choice3" value="choice 3">
+                    <label for="choice3">Ground Beef</label>
+                    <br>
+                    <input type="checkbox" id="choice4" name="choice4" value="choice 4">
+                    <label for="choice4">Bacon</label>
+                    <br>
+                    <input type="checkbox" id="choice5" name="choice5" value="choice 5">
+                    <label for="choice5">Ham</label>
+                    <br>
+                    <input type="checkbox" id="choice6" name="choice6" value="choice 6">
+                    <label for="choice6">Chicken</label>
+                    <br>
+                    <input type="checkbox" id="choice7" name="choice7" value="choice 7">
+                    <label for="choice7">Mushrooms</label>
+                    <br>
+                    <input type="checkbox" id="choice8" name="choice8" value="choice 8">
+                    <label for="choice8">Onions</label>
+                    <br>
+                    <input type="checkbox" id="choice9" name="choice9" value="choice 9">
+                    <label for="choice9">Tomatoes</label>
+                    <br>
+                    <input type="checkbox" id="choice10" name="choice10" value="choice 10">
+                    <label for="choice10">Pineapples</label>
+                    <br>
+                    <label>Cheese</label>
+                    <br>
+                    <input type="radio" id="dc" name="cheese" value="DC">
+                    <label for="dc">Double Cheese</label>
+                    <br>
+                    <input type="radio" id="mozzarella" name="cheese" value="M">
+                    <label for="mozzarella">Mozzarella</label>
+                    <br>
+                    <input type="radio" id="no" name="cheese" value="NO">
+                    <label for="no">No Cheese!!</label>
+                    <br>
+                    <label>Special Instructions</label>
+                    <br>
+                    <p><textarea placeholder="Add a note/Inform us about your Allergies"  rows="5" cols="30"></textarea></p>
+                    <br>
+                    <label>Your Address (required)</label>
+                    <br>
+                    <input type="text" name="address" required placeholder="Type your address">
+                    <br>
+                    <label>Phone Number(required):</label>
+                    <br>
+                    <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <br>
+                    <input type="email" name="email" required placeholder="Your Email">
+                    <br>
+                    <input type="submit" value="Add to Cart">
+                </form>
+            </div>
+        </main>
+        <aside>
+            <div>
+                <article>
+                    <img src="./img/img1.webp" alt="image 1" width="350" height="350">
+                    <br>
+                    <a href="#">Pizza of the Day (Pepperoni Pizza)</a>
+                </article>
+                <article>
+                    <img src="./img/img2.jpg" alt="image 2" width="350" height="350">
+                    <br>
+                    <a href="#">Buy One Cheese Pizza Get Another One!</a>
+                </article>
+                <article>
+                    <img src="./img/img3.jpeg" alt="image 3" width="350" height="350">
+                    <br>
+                    <a href="#">Our New Family Combo</a>
+                </article>
+                <article>
+                    <img src="./img/img4.jpg" alt="image 4" width="350" height="350">
+                    <br>
+                    <a href="#">Other Meals We Offer</a>
+                </article>
+            </div>    
+        </aside>
+        <footer>
+            <div>
+                <a href="index.html"><img src="./img/pizzallio-logo.png" alt="footer logo" width="100" height="100"></a>
+                <br>
+                <a href="#">pizzallio171@gmail.com</a>
+                <br>
+                <a href="#">+1 (437) 657-2863</a>
+            </div>    
+        </footer>
+    </body>
+</html>
